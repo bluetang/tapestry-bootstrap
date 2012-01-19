@@ -2,7 +2,7 @@ package com.trsvax.bootstrap.mixins;
 
 import org.apache.tapestry5.BindingConstants;
 import org.apache.tapestry5.MarkupWriter;
-import org.apache.tapestry5.annotations.BeforeRenderBody;
+import org.apache.tapestry5.annotations.BeforeRenderTemplate;
 import org.apache.tapestry5.annotations.Parameter;
 
 import com.trsvax.bootstrap.environment.ButtonEnvironment;
@@ -25,7 +25,7 @@ public class Button extends BootstrapMixin {
     @Parameter(value = ButtonEnvironment.buttonSize, defaultPrefix = BindingConstants.LITERAL, required = false)
     private String buttonSize;
 
-    @BeforeRenderBody
+    @BeforeRenderTemplate
     void addBootstrapCssClasses(MarkupWriter writer) {
         writer.attributes("class", toClassName("btn",buttonType,buttonSize));
     } 
