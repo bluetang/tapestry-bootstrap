@@ -84,7 +84,7 @@
        <span t:type="any" t:mixins="tb/label" labelType="success">New</span>
        <span t:type="any" t:mixins="tb/label" labelType="warning">Warning</span>
        <span t:type="any" t:mixins="tb/label" labelType="important">Important</span>
-       <span t:type="any" t:mixins="tb/label" labelType="notice">Notice</span>
+       <span t:type="any" t:mixins="tb/label" labelType="info">Notice</span>
       </section>
       
       <section id="media-grid">
@@ -153,7 +153,7 @@ private PrettyPrintEnvironment prettyPrint;
 
 
 <p:sidebar>
-      	<ul>
+     <ul class="nav nav-list">
      	<li><a href="#alerts">Alerts</a></li>
      	<li><a href="#basic-alert">Basic Alert</a></li>
      	<li><a href="#block-message">Block Message</a></li>
