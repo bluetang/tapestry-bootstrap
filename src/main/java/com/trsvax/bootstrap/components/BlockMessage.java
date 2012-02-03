@@ -20,7 +20,7 @@ public class BlockMessage extends BootstrapComponent {
      * <tt>info</tt> or <tt>success</tt>
      * */
 	@Parameter(value=BlockMessageEnvironment.type,defaultPrefix="literal")
-	private String type;
+	private BlockMessageType type;
 
     /** A {@link Block} to which the actions should be delegated to. */
 	@SuppressWarnings("unused")

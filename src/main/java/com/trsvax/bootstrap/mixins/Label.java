@@ -1,10 +1,11 @@
 package com.trsvax.bootstrap.mixins;
 
+import com.trsvax.bootstrap.environment.LabelEnvironment;
+import com.trsvax.bootstrap.environment.LabelType;
+
 import org.apache.tapestry5.MarkupWriter;
 import org.apache.tapestry5.annotations.BeforeRenderBody;
 import org.apache.tapestry5.annotations.Parameter;
-
-import com.trsvax.bootstrap.environment.LabelEnvironment;
 
 /**
  * Mixin transforming any Tapestry Component as a
@@ -20,7 +21,7 @@ import com.trsvax.bootstrap.environment.LabelEnvironment;
 public class Label extends BootstrapMixin {
 	
 	@Parameter(value=LabelEnvironment.labelType,defaultPrefix="literal")
-	private String labelType;
+	private LabelType labelType;
 	
 	@BeforeRenderBody
     void addBootstrapCssClasses(MarkupWriter writer) {

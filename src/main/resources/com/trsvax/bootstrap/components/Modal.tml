@@ -7,7 +7,7 @@
        <t:body/>
      </div>
      <div class="modal-footer">
-       <t:delegate to="header"/>
+       <t:delegate to="footer"/>
      </div>
 </div>
 </t:container>

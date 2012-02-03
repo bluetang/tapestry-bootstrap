@@ -1,5 +1,15 @@
 package com.trsvax.bootstrap.environment;
 
 public enum ButtonType {
-	primary,info,success,danger;
+    primary("btn-primary"), info("btn-primary"), success("btn-success"), danger("btn-danger");
+
+    private String cssClass;
+
+    ButtonType(String cssClass) {
+        this.cssClass = cssClass;
+    }
+
+    public String toString() {
+        return this.cssClass;
+    }
 }

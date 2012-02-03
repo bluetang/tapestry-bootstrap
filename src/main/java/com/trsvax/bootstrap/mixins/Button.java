@@ -1,11 +1,13 @@
 package com.trsvax.bootstrap.mixins;
 
+import com.trsvax.bootstrap.environment.ButtonEnvironment;
+import com.trsvax.bootstrap.environment.ButtonSize;
+import com.trsvax.bootstrap.environment.ButtonType;
+
 import org.apache.tapestry5.BindingConstants;
 import org.apache.tapestry5.MarkupWriter;
 import org.apache.tapestry5.annotations.BeforeRenderTemplate;
 import org.apache.tapestry5.annotations.Parameter;
-
-import com.trsvax.bootstrap.environment.ButtonEnvironment;
 
 /**
  * Mixin transforming any Tapestry Component as a
@@ -20,10 +22,10 @@ import com.trsvax.bootstrap.environment.ButtonEnvironment;
  */
 public class Button extends BootstrapMixin {
     @Parameter(value = ButtonEnvironment.buttonType, defaultPrefix = BindingConstants.LITERAL, required = false)
-    private String buttonType;
+    private ButtonType buttonType;
 
     @Parameter(value = ButtonEnvironment.buttonSize, defaultPrefix = BindingConstants.LITERAL, required = false)
-    private String buttonSize;
+    private ButtonSize buttonSize;
 
     @BeforeRenderTemplate
     void addBootstrapCssClasses(MarkupWriter writer) {

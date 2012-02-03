@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.trsvax.bootstrap</groupId>
     <artifactId>tapestry-bootstrap</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>tapestry-bootstrap Tapestry 5 Application</name>
     <url>https://github.com/trsvax/tapestry-bootstrap</url>
@@ -40,8 +40,8 @@
         </dependency>
 
         -->
-        
-        
+
+
         <dependency>
             <groupId>org.got5</groupId>
             <artifactId>tapestry5-jquery</artifactId>
@@ -53,8 +53,8 @@
                 </exclusion>
             </exclusions>
         </dependency>
-    	
-    	
+
+
 
         <!-- A dependency on either JUnit or TestNG is required, or the surefire plugin (which runs the tests)
 will fail, preventing Maven from packaging the WAR. Tapestry includes a large number
@@ -183,7 +183,8 @@ of testing facilities designed for use with TestNG (http://testng.org/), so it's
                         </systemProperty>
                     </systemProperties>
                     <useTestClasspath>true</useTestClasspath>
-					<webAppSourceDirectory>src/test/webapp</webAppSourceDirectory>
+				          	<webAppSourceDirectory>src/test/webapp</webAppSourceDirectory>
+                    <scanIntervalSeconds>8</scanIntervalSeconds>
                 </configuration>
             </plugin>
 
@@ -277,13 +278,27 @@ of testing facilities designed for use with TestNG (http://testng.org/), so it's
             <url>http://nexus.devlab722.net/nexus/content/repositories/releases</url>
             <snapshots> <enabled>false</enabled> </snapshots>
         </repository>
-	
+
 	    <repository>
 	        <id>devlab722-snapshot-repo</id>
 	        <url>http://nexus.devlab722.net/nexus/content/repositories/snapshots</url>
             <releases> <enabled>false</enabled> </releases>
 	    </repository>
+
     </repositories>
+    <distributionManagement>
+        <repository>
+            <id>bluetang-central</id>
+            <name>libs-releases</name>
+           <url>http://maven.bluetangstudio.com:8081/nexus/content/repositories/releases</url>
+         </repository>
+       <snapshotRepository>
+            <id>bluetang-snapshots</id>
+            <name>libs-snapshots</name>
+            <url>http://maven.bluetangstudio.com:8081/nexus/content/repositories/snapshots</url>
+       </snapshotRepository>
+    </distributionManagement>
+
 
     <pluginRepositories>
         <pluginRepository>
