@@ -12,7 +12,7 @@ import org.apache.tapestry5.annotations.Property;
  * Display a <a href="http://twitter.github.com/bootstrap/#alerts">Bootstrap block message</a>.
  * @tapestrydoc
  */
-@Import(library="classpath:/com/trsvax/bootstrap/bootstrap-alerts.js")
+@Import(library="classpath:/com/trsvax/bootstrap/bootstrap-alert.js")
 public class BlockMessage extends BootstrapComponent {
 
     /**

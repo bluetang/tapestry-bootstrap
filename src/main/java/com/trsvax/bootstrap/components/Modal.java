@@ -9,16 +9,17 @@ import org.apache.tapestry5.annotations.Property;
 
 /**
  * Modal dialog. To use enable the modal, you have to place a control element on the page.
- * <pre><code><a class="btn" data-controls-modal="id" data-backdrop="true">Add New Location</a></code></pre>
+ * <pre><code><a class="btn" data-toggle="modal" herf="#id">Add New Location</a></code></pre>
  * 
  * @tapestrydoc
- * @see <a href="http://twitter.github.com/bootstrap/#popovers">Bootstrap Popovers Modals</a>
+ * @see <a href="http://twitter.github.com/bootstrap/javascript.html#modals">Bootstrap Modals</a>
  */
 @SuppressWarnings("unused")
 @Import(library="classpath:/com/trsvax/bootstrap/bootstrap-modal.js")
 public class Modal extends BootstrapComponent {
 
 	@Parameter(defaultPrefix = BindingConstants.LITERAL)
+    @Property
 	private String id;
 
 	@Parameter

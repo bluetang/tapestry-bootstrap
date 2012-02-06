@@ -94,6 +94,18 @@
       
       <section id="modal">
        <h3>Modal</h3>
+
+        <t:modal id="modelexample">
+          <p>Modal Body</p>
+          <p:header>
+            <h3>Modal Title</h3>
+          </p:header>
+          <p:footer>
+            <t:modallink target="#modelexample" text="literal:close"/>
+          </p:footer>
+        </t:modal>
+
+        <t:modallink target="#modelexample" text="literal:click to toggle modal"/>
       </section>
       
       
