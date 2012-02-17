@@ -7,7 +7,11 @@
     <packaging>jar</packaging>
     <name>tapestry-bootstrap Tapestry 5 Application</name>
     <url>https://github.com/trsvax/tapestry-bootstrap</url>
-
+    <parent>
+    <groupId>com.bluetangstudio.common</groupId>
+    <artifactId>masterpom</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+    </parent> 
     <scm>
         <url>https://github.com/trsvax/tapestry-bootstrap</url>
         <connection>scm:git:git://github.com/trsvax/tapestry-bootstrap.git</connection>
