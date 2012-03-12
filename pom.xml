@@ -10,12 +10,12 @@
     <parent>
     <groupId>com.bluetangstudio.common</groupId>
     <artifactId>masterpom</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.3</version>
     </parent> 
     <scm>
-        <url>https://github.com/trsvax/tapestry-bootstrap</url>
-        <connection>scm:git:git://github.com/trsvax/tapestry-bootstrap.git</connection>
-        <developerConnection>scm:git:git@github.com:trsvax/tapestry-bootstrap.git</developerConnection>
+        <url>https://github.com/bluetang/tapestry-bootstrap</url>
+        <connection>scm:git:git://github.com/bluetang/tapestry-bootstrap.git</connection>
+        <developerConnection>scm:git:git@github.com:bluetang/tapestry-bootstrap.git</developerConnection>
     </scm>
 
     <dependencies>
