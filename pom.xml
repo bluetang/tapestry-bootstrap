@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.bluetangstudio.common</groupId>
     <artifactId>tapestry-bootstrap</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>tapestry-bootstrap Tapestry 5 Application</name>
     <url>https://github.com/trsvax/tapestry-bootstrap</url>
